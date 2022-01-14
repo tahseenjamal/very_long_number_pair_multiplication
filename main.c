@@ -36,8 +36,6 @@ void single_step_multiplication(char *primary_number_as_string,
 
     char carry_forward = 0, single_digit_number = 0 , wip_length_counter = 0;
 
-    int primary_number_length_counter = strlen(primary_number_as_string) -1 ;
-
     /*
      * Depending on which layer it is, add tailing zero. As you understand, with digit position at unit
      * ten, hundred, thousand etc position, you need to accordingly add tailing zeros to
@@ -49,6 +47,7 @@ void single_step_multiplication(char *primary_number_as_string,
      * so work in progress answer has tailing 0 basis secondary number digit position in second_number
      */
 
+    int primary_number_length_counter = strlen(primary_number_as_string) -1 ;
 
     /*
      * Now traverse the first number and multiply its each digit with second number's digit passed
